@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body{
+    background: black;
+}
+
+.main{
+    display: flex;
+}
+
+.navbar{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #b66c6c;
+    margin-left: 2px;
+    margin-right: 8px;
+    background: black;
+    /* margin-top: 1px; */
+}
+
+.nav-left {
+    width: 50px;
+    padding: 9px;
+    margin-top: 6px;
+    margin-left: 17px;
+}
+
+.nav-left img{
+    width: 100%;
+}
+
+.nav-centre, .search, .install-app, .nav-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.home-icon{
+    width: 48px;
+    background: rgb(42 42 42);
+    height: 48px;
+    padding-top: 12px;
+    padding-right: 25px;
+    border-radius: 48px;
+    margin-right: 10px;
+    padding-left: 13px;
+    margin-top: 5px;
+}
+
+
+.home-icon i{
+    font-size: 20px;
+    
+}
+
+.home-icon i:hover{
+    font-size: 22px;
+}
+
+.nav-centre {
+    margin-left: 256px;
+    
+}
+
+.nav-centre .search{
+    /* border:2px solid white; */
+    width: 472px;
+    height: 48px;
+    border-radius: 50px;
+    margin-top: 5px;
+    background: rgb(42 42 42);
+}
+
+.search i{
+    margin-left: 10px;
+    font-size: 22px;
+    padding: 2px;
+    padding-top: 3px;
+    color: rgba(221, 221, 221, 0.796);
+}
+
+.search i:hover{
+    cursor: pointer;
+}
+
+.search input{
+    width: 374px;
+    margin-left: 8px;
+    height: 26px;
+    color: white;
+    background: rgb(42 42 42);
+    font-size: 15px;
+    /* border: none; */
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-right: 1px solid rgba(221, 221, 221, 0.796);
+    
+}
+
+
+.nav-centre .search img{
+    width: 41px;
+    padding: 6px;
+    padding-right: 2px;
+    margin-right: 10px;
+}
+
+.nav-right{
+    gap: 19px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 12px;
+    margin-top: 4px;
+}
+
+.nav-right .install-app{
+    margin-left: 10px;
+}
+
+.nav-right .install-app:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.nav-right .install-app p{
+    padding-left: 4px;
+    color: rgba(221, 221, 221, 0.796);
+}
+
+.nav-right p{
+    padding-left: 10px;
+    color: rgba(221, 221, 221, 0.796);
+}
+
+.nav-right p:hover{
+    cursor: pointer;
+}
+
+.nav-right button{
+    width: 109px;
+    height: 48px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-right button:hover{
+    cursor: pointer;
+}
+
+.sidebar{
+    width: 422px;
+    margin: 5px;
+    height: 651px;
+    background: rgb(20, 20, 20);
+    border-radius: 8px;
+}
+
+.library, .library-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.library{
+    margin: 23px;
+    margin-top: 16px;
+    margin-right: 15px;
+}
+
+.library-left{
+    gap: 22px;
+}
+
+.library-left:hover{
+    cursor: pointer;
+}
+
+.library-left h4{
+    color: rgba(221, 221, 221, 0.796);
+}
+
+.library-left i{
+    font-size: 22px;
+}
+
+.library p{
+    font-size: 30px;
+}
+
+.library-right{
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    padding-top: 6px;
+    border-radius: 50%;
+}
+
+.library-right:hover{
+    cursor: pointer;
+    background: rgb(42 42 42);
+}
+
+.playlist-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.playlist-header p{
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 10px;
+    color: rgba(221, 221, 221, 0.796);
+}
+
+.playlist{
+    width: 406px;
+    height: 130px;
+    background: rgb(31, 31, 31);
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.playlist-container{
+    margin: 10px;
+    padding: 12px;
+    padding-top: 16px;
+}
+
+.playlist-container p{
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.playlist-container .playlist-button{
+   margin-top: 22px;
+   width: 128px;
+   height: 33px;
+   border-radius: 50px;
+   border: none;
+   outline: none;
+   color: black;
+   font-size: 14px;
+   font-weight: 600;
+}
+
+.playlist-button:hover{
+    cursor: pointer;
+}
+
+.podcast{
+    margin-top: 26px;
+}
+
+.podcast-container .podcast-button{
+    margin-top: 23px;
+    width: 150px;
+    height: 33px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.podcast-button:hover{
+    cursor: pointer;
+}
+
+.sidebar-footer{
+    margin-top: 100px;
+    margin-left: 30px ;
+    margin-right: 30px;
+}
+
+.sidebar-footer-list li{
+    font-size: 11px;
+}
+
+
+.inline-text-footer li{
+    display: inline-block;
+    padding-right: 16px;
+    padding-top: 14px;
+    color: rgba(221, 221, 221, 0.796);
+    
+}
+
+.inline-text-footer li:hover{
+    cursor: pointer;
+}
+
+.sidebar-footer p{
+    font-size: 12px;
+    margin-top: 13px;
+    width: 20px;
+}
+
+.sidebar-footer p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sidebar-footer button{
+    margin-top: 34px;
+    height: 32px;
+    width: 97px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid rgba(221, 221, 221, 0.796);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 15px;
+    gap: 4px;
+    background: rgb(20, 20, 20);
+    cursor: pointer;
+}
+
+.sidebar-footer button i{
+    font-size: 15px;
+}
+
+
+.right-main{
+    width: 69vw;
+    margin: 5px;
+    margin-right: 10px;
+    height: 651px;
+    background: linear-gradient( #1f1f1f,rgb(39, 38, 38));
+    /* background: rgb(20, 20, 20); */
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+
+
+.right-main::-webkit-scrollbar{
+    background: transparent;
+    
+}
+
+.right-main::-webkit-scrollbar-thumb{
+    background: transparent;
+    width: 10px;
+    
+}
+
+.right-main:hover::-webkit-scrollbar-thumb{
+    background: #5c5b5b;
+    width: 5px;
+    
+}
+
+.right-main::-webkit-scrollbar-corner{
+    border-radius: 6px;
+    
+}
+
+.spotify-playlist{
+    padding: 16px 10px;
+    padding-right: 5px;
+}
+
+.spotify-playlist h2{
+    font-size: 22px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.right-main .spotify-playlist .card .artists{
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+}
+
+.spotify-playlist .card{
+    display: flex;
+    gap: 5px;
+    overflow: hidden;
+}
+
+.spotify-playlist .card .item{
+    width: 200px;
+    min-width: 140px;
+    /* background-color: #181818; */
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.spotify-playlist .card .item:hover{
+    background-color: #1f1f1f;
+}
+
+.spotify-playlist .card .item img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.spotify-playlist .item .list{
+    display: inline-block;
+
+}
+
+.spotify-playlist .item h4{
+    margin-bottom: 7px;
+}
+
+.spotify-playlist .item li{
+    display: inline-block;
+    color: #8f8e8e;
+    font-size: 14px;
+    font-weight: 540;
+    margin-top: 2px;
+}
+
+.spotify-playlist .item p{
+    color: #8f8e8e;
+    font-size: 14px;
+    font-weight: 540;
+    margin-top: 2px;
+}
+
+.spotify-playlist .playlist-header p{
+    margin-right: 10px;
+}
+
+.spotify-playlist .playlist-header h2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.spotify-playlist .playlist-header p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.spotify-playlist .item .underline:hover{
+    text-decoration: underline;
+}
+.spotify-playlist .item h4:hover{
+    text-decoration: underline;
+}
+.spotify-playlist .item li:hover{
+    text-decoration: underline;
+}
+
+.spotify-playlist .play-btn{
+    position: relative;
+}
+
+.spotify-playlist .play-btn i{
+    position: absolute;
+    background: #1db954;
+    border-radius: 50%;
+    padding: 16px;
+    padding-left: 18px;
+    color: black;
+    right: 8px;
+    top: -62px;
+    opacity: 0;
+    transition: 0.3s ease all;
+    font-size: 20px;
+}
+
+.spotify-playlist .card .item:hover .play-btn i{
+    opacity: 1;
+    transform: translateY(-8px);
+}
+
+.footer-section{
+    padding: 20px 40px;
+
+}
+
+.footer-section .footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+}
+
+.footer-section .footer .footer-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer-section .footer .footer-links .footer-column{
+    margin: 0 12px;
+}
+
+.footer-section .footer .footer-links div{
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 16px;
+    
+}
+
+.footer-section .footer .footer-links ul li{
+    list-style: none;
+    margin: 6px 0;
+}
+
+.footer-section .footer .footer-links ul li a{
+    text-decoration: none;
+    color: #969393;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-section .footer .footer-links ul li a:hover{
+    text-decoration: underline;
+    color: #fff;
+    
+}
+
+
+.footer .social-links i{
+    color: #fff;
+    background: #353434;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.footer .social-links i:hover{
+   
+    background: #636262;
+    
+}
+
+hr{
+    margin: 20px 40px;
+    border: 0;
+    outline: 0;
+    border: 1px solid #575656;
+    margin-top: 40px;
+}
+
+.copyright{
+    padding: 0 40px;
+    color: #969393;
+    font-size: 15px;
+    margin-bottom: 30px;
+
+}
+
+.preview{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ae2896,#509bf5);
+    padding: 15px 40px;
+    height: 65px;
+    margin-top: 4px;
+    margin-left: 5px;
+    margin-right: 9px;
+}
+
+.preview h4{
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.preview p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.preview button{
+    padding: 12px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+
+}
